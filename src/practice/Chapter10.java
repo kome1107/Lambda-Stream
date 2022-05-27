@@ -20,5 +20,6 @@ public class Chapter10 {
 		System.out.println("【未完了のタスクを昇順に並び替えて一覧表示】");
 		list.stream().filter(t -> t.isDone() == false).sorted((t1, t2) -> t1.getDate().compareTo(t2.getDate()))
 				.forEach(System.out::println);
+		
 	}
 }

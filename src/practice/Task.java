@@ -21,12 +21,10 @@ public class Task implements Comparable<Task> {
 	public String getTask() {
 		return task;
 	}
-
 // boolean型のgetterメソッドはis～とすることもあります
 	public boolean isDone() {
 		return done;
 	}
-
 // compareToメソッドをオーバーライドする
 // 日付で並び替えるため、LocalDateのcompareToを使う
 	@Override
